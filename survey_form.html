@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a Survey Form<p>
+      <form id="survey-form" method="post" action="">
+        <fieldset>
+        
+          <label  id="name-label">name:
+          <input id="name" type="text" placeholder="xyz"required></label>
+          <label id="email-label">email:
+          <input id="email"type="email" placeholder="xyz@gmail.com"required></label>
+          <label id="number-label">number:
+          <input type="number" id="number" min="0" max="10"placeholder="758256752"></label>
+          </fieldset>
+          <fieldset>
+         <h4>select your domain<h4>
+          <select id="dropdown">
+            <option>CSE</option>
+            <option>CSM</option>
+            <option>CSD</option>
+          </select>
+          </fieldset>
+          <fieldset><h4>Choose below option <h4>
+            <label>Account type</label>
+          <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="personal-account" checked
+          />personal</label><label for="business-account"><input id="business-account" type="radio" name="account-type" value="business-account"class="inline" 
+          />business</label>
+          </fieldset>
+          
+          <label>Select Which type of languages do know</label>          <label for="java"><input id="java"value="java" type="checkbox" name="java" class="inline" 
+          />java</label><label for="c#"><input id="c#" value="c#"type="checkbox" name="c#" class="inline" 
+          />c#</label><label for="c"><input id="c" type="checkbox" name="c" value="c"class="inline" 
+          />c</label><label for="python"><input id="python" type="checkbox" name="python" class="inline"
+          value="python" 
+          />python</label>
+          <label for="info">provide feedback:<textarea id="info" name="info" rows="3" cols="30" placeholder="I like to inform...."></textarea>
+          <input id="submit"type="submit" name="submit" value="sumbit"> 
+
+    
+        
+       </fieldset>
+      </form>
+  </body>
